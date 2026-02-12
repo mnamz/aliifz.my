@@ -1,0 +1,49 @@
+---
+/** 
+	Uses https://www.astroicon.dev/getting-started/
+	Find icons via guide: https://www.astroicon.dev/guides/customization/#open-source-icon-sets
+	Only installed pack is: @iconify-json/mdi
+*/
+const socialLinks: {
+	friendlyName: string;
+	isWebmention?: boolean;
+	link: string;
+	name: string;
+}[] = [
+	{
+		friendlyName: "Github",
+		link: "https://github.com/mnamz",
+		name: "mdi:github",
+	},
+	{
+		friendlyName: "LinkedIn",
+		link: "https://linkedin.com/in/mnamz",
+		name: "mdi:linkedin",
+	},
+	{
+		friendlyName: "Instagram",
+		link: "https://instagram.com/mnamzzz",
+		name: "mdi:instagram",
+	},
+];
+---
+
+<div class="flex flex-wrap items-end gap-x-2">
+	<p>Find me on</p>
+	<ul class="flex flex-1 items-center gap-x-2 sm:flex-initial">
+		{
+			socialLinks.map(({ friendlyName, isWebmention, link }) => (
+				<li class="flex">
+					<a
+						class="hover:text-link inline-block"
+						href={link}
+						rel={`noreferrer ${isWebmention ? "me authn" : ""}`}
+						target="_blank"
+					>
+						<span class="underline">{friendlyName}</span>
+					</a>
+				</li>
+			))
+		}
+	</ul>
+</div>
