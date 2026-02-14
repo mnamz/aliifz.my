@@ -15,6 +15,18 @@ const latestPosts = allPostsByDate.slice(0, MAX_POSTS);
 // Pinned Posts, set to a max of 3;
 const MAX_PINNED_POSTS = 3;
 const pinnedPosts = allPostsByDate.filter((p) => p.data.pinned).slice(0, MAX_PINNED_POSTS);
+
+function getExcerpt(body: string | undefined, maxLength = 160): string {
+	if (!body) return "";
+	const plain = body
+		.replace(/^---[\s\S]*?---/, "")
+		.replace(/^#{1,6}\s+.*$/gm, "")
+		.replace(/\[([^\]]*)\]\([^)]*\)/g, "$1")
+		.replace(/[*_~`>#\-]/g, "")
+		.replace(/\n+/g, " ")
+		.trim();
+	return plain.length > maxLength ? plain.slice(0, maxLength).trimEnd() + "…" : plain;
+}
 ---
 
 <PageLayout meta={{ title: "Home" }}>
@@ -33,6 +45,11 @@ const pinnedPosts = allPostsByDate.filter((p) => p.data.pinned).slice(0, MAX_PIN
 					{pinnedPosts.map((p) => (
 						<li class="grid gap-1 sm:grid-cols-[auto_1fr]">
 							<PostPreview post={p} />
+							{getExcerpt(p.body) && (
+								<p class="text-muted-foreground col-start-2 text-sm text-gray-500 dark:text-gray-400 line-clamp-2">
+									{getExcerpt(p.body)}
+								</p>
+							)}
 						</li>
 					))}
 				</ul>
