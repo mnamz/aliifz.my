@@ -11,7 +11,7 @@ export const siteConfig: SiteConfig = {
 			year: "numeric",
 		},
 	},
-	description: "Systems Integration Architect - thoughts on architecture, integrations, and cloud infrastructure",
+	description: "Overthinking, systematically",
 	lang: "en",
 	ogLocale: "en_MY",
 	title: "pattern recognition",
