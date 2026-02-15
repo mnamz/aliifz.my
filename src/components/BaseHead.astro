@@ -11,6 +11,8 @@ const { articleDate, description, ogImage, title } = Astro.props;
 const titleSeparator = "•";
 const siteTitle = `${title} ${titleSeparator} ${siteConfig.title}`;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const OG_IMAGE_VERSION = "2";
+const socialImageURL = new URL(`/social-card.png?v=${OG_IMAGE_VERSION}`, Astro.url).href;
 ---
 
 <meta charset="utf-8" />
@@ -51,6 +53,9 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 <meta content={canonicalURL} property="og:url" />
 <meta content={siteConfig.title} property="og:site_name" />
 <meta content={siteConfig.ogLocale} property="og:locale" />
+<meta content={socialImageURL} property="og:image" />
+<meta content="1200" property="og:image:width" />
+<meta content="630" property="og:image:height" />
 {
 	articleDate && (
 		<>
@@ -61,10 +66,11 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 }
 
 {/* Twitter */}
-<meta content="summary" property="twitter:card" />
+<meta content="summary_large_image" property="twitter:card" />
 <meta content={canonicalURL} property="twitter:url" />
 <meta content={title} property="twitter:title" />
 <meta content={description} property="twitter:description" />
+<meta content={socialImageURL} property="twitter:image" />
 
 {/* Sitemap */}
 <link href="/sitemap-index.xml" rel="sitemap" />
