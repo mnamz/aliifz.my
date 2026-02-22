@@ -3,7 +3,6 @@ title: "For the Love of the Game"
 description: ""
 publishDate: "14 Feb 2026"
 tags: ["general"]
-pinned: true
 ---
 I’m in it for the game, but not the game you’re thinking of.
 

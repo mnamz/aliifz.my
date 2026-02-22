@@ -3,6 +3,7 @@ title: "The Leader I'm Becoming"
 description: "Reflections on leadership growth"
 publishDate: "22 Feb 2026"
 tags: ["leadership", "general"]
+pinned: true
 ---
 There's a dilemma I keep coming back to. Not the kind you google and get a neat framework for, or the kind your workplace/university course might've already introduced you to with.
 
