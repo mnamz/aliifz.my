@@ -91,7 +91,7 @@ export async function GET(context: APIContext) {
 		weekday: "long",
 	});
 
-	const MAX_CHARS = 2200;
+	const MAX_CHARS = 3000;
 	const stripped = stripMarkdown(body);
 	const plainBody = stripped.length > MAX_CHARS ? stripped.slice(0, MAX_CHARS).trimEnd() + "..." : stripped;
 
