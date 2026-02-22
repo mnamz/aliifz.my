@@ -17,7 +17,7 @@ The second one? Results-oriented. Delegates tasks, trusts the outcome over the p
 
 And yet, I'd still rather be led that way. Given the autonomy to handle it, even if my approach isn't the "right" one, the silliness and carelessness still in me and all lol. The ends justify the means sounds ruthless until you've been micromanaged into mediocrity. Then it just sounds like breathing room.
 
-You've probably heard the line from Macchiavelli, "It is better to be feared than loved, if you cannot be both." Maybe this was about how you leverage your power? Perhaps bending people to your will? But the real tension here isn't feared versus loved.
+You've probably heard the line from Machiavelli, "It is better to be feared than loved, if you cannot be both." Maybe this was about how you leverage your power? Perhaps bending people to your will? But the real tension here isn't feared versus loved.
 
 It's protected versus trusted.
 
@@ -27,6 +27,6 @@ I've (been) led both ways. Flexible, situational, whatever the moment needed. Bu
 
 Perfectionism doesn't grow people around you, and neither does control. But trust does.
 
-Maybe that's not very Machiavelli-like of me. But something quieter works here, no whiplash, no fear needed. Just trusted to be tough enough to let people find their own way.
+Maybe that's not very Machiavelli-like of me. But something quieter works here, no whiplash, no fear needed. Just being trusted enough to be tough enough to let people find their own way.
 
 That's the leader I'm becoming. I think.
